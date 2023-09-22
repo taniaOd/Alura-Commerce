@@ -1,0 +1,47 @@
+:root {
+  --background-fondo: #eee9e5;
+  --background-nav: #ffe181;
+  --background--btn: #ff9c97;
+  --background--ver: #ffba7f;
+  /* Tipografia */
+  --prime: "Courier Prime", monospace;
+  --ubuntu: "Ubuntu", sans-serif;
+}
+
+body {
+  font-family: var(--ubuntu);
+  font-weight: 500;
+  box-sizing: border-box;
+  background-color: var(--background-fondo);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 1.25px;
+  width: 100%;
+}
+/* .container {
+  padding: 0 4.5rem;
+} */
+
+ol,
+ul,
+li {
+  list-style: none;
+  font-family: var(--ubuntu);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+}
+
+/* .barraBusqueda_btn_login */
+a:link,
+/* .barraBusqueda_btn_login */ a:visited {
+  color: var(--background--btn);
+}

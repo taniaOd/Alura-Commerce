@@ -1,0 +1,120 @@
+.barra {
+  background-color: var(--background-nav);
+  padding: 1rem 10rem 0.5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.barra_logo {
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  justify-content: space-around;
+}
+
+.barra_logo p {
+  font-family: var(--prime);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.barra_logo_ico {
+  color: var(--background--btn);
+  font-size: 3.25rem;
+  margin-right: 0.5rem;
+}
+
+.barra_logo_title {
+  color: var(--background--btn);
+}
+
+.barra_busqueda {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.barra_Busqueda_txt {
+  border: none;
+  border-radius: 10px;
+  padding-left: 0.75rem;
+  width: 15rem;
+  height: 1.35rem;
+}
+
+.barra_Busqueda_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.barra_Busqueda_btn_ico {
+  color: var(--background--btn);
+  font-weight: bolder;
+  font-size: 1.15rem;
+}
+.barraBusqueda_btn_login {
+  align-self: center;
+  background: transparent;
+  border-color: var(--background--btn);
+  border-radius: 0.5rem;
+  border: 2px solid;
+  padding: 10px 18px;
+  font-family: var(--ubuntu);
+  font-size: 18px;
+  color: var(--background--btn);
+  box-shadow: none;
+  transition-duration: 0.8s;
+}
+.barraBusqueda_btn_login:hover {
+  background: var(--background--btn);
+  color: var(--background-fondo);
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media screen and (max-width: 480px) {
+  .barra {
+    padding: 0.05rem 1.25rem 0.75rem 1.25rem;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .barra_logo {
+    margin-right: 0;
+  }
+
+  .barra_logo p {
+    font-size: 1.75rem;
+  }
+
+  .barra_logo_ico {
+    font-size: 2.25rem;
+    margin-right: 0.25rem;
+  }
+  .barra_busqueda {
+    width: 45%;
+    margin-bottom: 0.75rem;
+  }
+  .barra_Busqueda_btn_ico {
+    font-size: 1rem;
+  }
+  .barraBusqueda_btn_login {
+    align-self: flex-start;
+    border: 1.5px solid;
+    padding: 4px 18px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .barra {
+    padding: 0.05rem 2.5rem 0.75rem 1.25rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .barraBusqueda_btn_login {
+    border: 1.5px solid;
+    padding: 4px 4%;
+  }
+}

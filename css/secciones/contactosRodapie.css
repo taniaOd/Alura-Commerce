@@ -1,0 +1,123 @@
+.contactos {
+  background-color: var(--background-nav);
+  padding: 1rem 5rem 0.75rem 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contactos_logo {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+}
+.contactos_logo_ico {
+  color: var(--background--btn);
+  font-size: 3.25rem;
+  margin-right: 0.5rem;
+}
+.contactos_logo p {
+  font-family: var(--prime);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contactos_logo_title {
+  color: var(--background--btn);
+}
+.contactos_txt {
+  font-family: var(--ubuntu);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contactos_txt_quest {
+}
+.contactos_form_box {
+}
+.contactos_form_title {
+  font-family: var(--prime);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.contactos_form_title_ico {
+  font-size: 34px;
+  color: var(--background--ver);
+}
+.contactos_form {
+  display: flex;
+  flex-direction: column;
+}
+.contactos_form_input,
+.contactos_form_msn {
+  border-radius: 5px;
+  border: none;
+  margin: 0.25rem 0;
+  padding: 0.75rem 0.5rem;
+  font-family: var(--ubuntu);
+  font-size: 15px;
+}
+.contactos_form_input,
+.contactos_form_msn:focus {
+  outline-color: var(--background--btn);
+}
+.contactos_form_btn {
+  margin-top: 1.15rem;
+  margin-bottom: 1.5rem;
+  align-self: center;
+  background: transparent;
+  border: none;
+  padding: 10px 18px;
+  font-family: var(--prime);
+  font-size: 18px;
+  transition-duration: 0.8s;
+}
+.contactos_form_btn:hover {
+  text-decoration: underline var(--background--btn) 3px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 480px) {
+  .contactos {
+    padding: 1rem 1.25rem 0.75rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .contactos_logo {
+    display: none;
+  }
+  .contactos_txt {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .contactos_form_title_ico {
+    display: none;
+  }
+  .contactos_form_input,
+  .contactos_form_msn {
+    width: 90%;
+  }
+  .contactos_form_btn {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .contactos {
+    padding: 1rem 1.25rem 0.75rem 1.25rem;
+  }
+  .contactos_logo {
+    width: 10%;
+  }
+  .contactos_txt {
+    font-size: 14px;
+  }
+  .contactos_form_title_ico {
+    display: none;
+  }
+  .contactos_form_btn {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+  }
+}
